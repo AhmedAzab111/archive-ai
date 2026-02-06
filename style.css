@@ -30,28 +30,41 @@ h1 {
 }
 
 .tagline {
-  margin-top: 12px;
+  margin-top: 14px;
   font-size: 1.2rem;
   color: #93c5fd;
 }
 
-.description {
-  margin-top: 22px;
-  font-size: 1rem;
-  color: #d1d5db;
-  line-height: 1.6;
+/* Space between subtitle and form */
+.waitlist {
+  margin-top: 32px; /* THIS creates breathing room */
+  display: flex;
+  justify-content: center;
+  gap: 12px;
 }
 
-.features {
-  list-style: none;
-  margin-top: 24px;
-  color: #c7d2fe;
+/* Email input */
+.waitlist input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: none;
+  min-width: 240px;
   font-size: 0.95rem;
 }
 
-.features li {
-  margin: 8px 0;
+/* Smaller, cleaner button */
+.waitlist button {
+  padding: 10px 18px;   /* smaller than before */
+  border-radius: 8px;
+  font-size: 0.9rem;    /* slightly smaller text */
+  font-weight: 500;
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  color: white;
+  border: none;
+  cursor: pointer;
 }
+
+
 
 .buttons {
   margin-top: 32px;
