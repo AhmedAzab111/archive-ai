@@ -17,9 +17,20 @@
       Organize your files with the power of AI
     </p>
 
-    <!-- Netlify Email Capture -->
-    <form name="waitlist" method="POST" data-netlify="true" class="waitlist">
+    <!-- Netlify Form -->
+    <form
+      name="waitlist"
+      method="POST"
+      action="/success.html"
+      data-netlify="true"
+      netlify
+      class="waitlist"
+    >
+      <!-- REQUIRED for Netlify -->
       <input type="hidden" name="form-name" value="waitlist">
+
+      <!-- Spam protection (required best practice) -->
+      <input type="hidden" name="bot-field">
 
       <input
         type="email"
